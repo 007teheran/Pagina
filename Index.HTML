@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página</title>
+    <meta name="description" content="PAGINA SIN NOMBRE">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --verde-hoja:  #8aae7c;
+            --verde-oliva: #b9cc8a;
+            --blanco-puro: #ffffff;
+            --verde-seco:  #6f7b0c;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: var(--verde-oliva);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .logo-nav {
+            width: 150px;
+            height: auto;
+        }
+        .main-title {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--verde-hoja);
+        }
+        #quienes-somos {
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: justify;
+        }
+        h2 {
+            text-align: center;
+            color: var(--verde-hoja);
+        }
+        #contact {
+            background-color: var(--verde-oliva);
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--blanco-puro);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: var(--verde-oliva);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="mainmenubtn">Menú</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Inicio</a>
+                    <a href="somos.html">Quiénes Somos</a>
+                    <a href="modelocanvas.html">Modelo Canvas</a>
+                    <a href="productos.html">Productos</a>
+                </div>
+            </div>
+            <div><h1>Niños con hambre generan violencia</h1></div>
+            <img src="logo_color.png" class="logo-nav" alt="Logo de MAHACAM">
+        </nav>
+        
+    </header>
+<br>
+    <main>
+        <div class="menu container">
+            <label for="menu">
+                <br><center>
+                <img src="wallpaper.1.jpg" class="menu-icono" alt="menu"></center>
+            </label>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <h3>Contáctanos</h3>
+        <p>Para consultas y pedidos, contacta con nosotros en:</p>
+        <p>
+            <img width="35" height="30" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" alt="Email Icon"><br>
+            <a href="">NO HAY</a>
+        </p>
+        <p>
+            <img width="45" height="30" src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2016.png" alt="Instagram Icon"><br>
+            <a href="" target="_blank">NO HAY</a>
+        </p>
+
+        <div class="mensajito">
+            <p>SANDRITA TE AMAMOS, PICOS PA LA NIÑA LINDA POR APOYARNOS EN ESTA ETAPA DE NUESTRAS VIDAS</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quienes Somos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --verde-hoja: #8aae7c;
+            --verde-oliva: #b9cc8a;
+            --blanco-puro: #ffffff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: var(--verde-oliva);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .logo-nav {
+            width: 150px;
+            height: auto;
+        }
+        .main-title {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--verde-hoja);
+        }
+        #contact {
+            background-color: var(--verde-oliva);
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #quienes-somos {
+            background-color: var(--blanco-puro);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        h2 {
+            text-align: center;
+            color: var(--verde-hoja);
+        }
+        strong {
+            color: var(--verde-oliva);
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--blanco-puro);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: var(--verde-oliva);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="mainmenubtn">Menú</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Inicio</a>
+                    <a href="somos.html">Quiénes Somos</a>
+                    <a href="modelocanvas.html">Modelo Canvas</a>
+                    <a href="productos.html">Productos</a>
+                </div>
+            </div>
+            <img src="logo_color.png" class="logo-nav" alt="Logo de MAHACAM">
+        </nav>
+    </header>
+
+    <main>  
+        <section id="quienes-somos">
+            <div class="content-container">
+                <h2>Nosotros</h2>
+                <p>
+                    Somos un grupo de cinco peludos que buscan emprender, queremos mucho a nuestra profe de tecnología y esperamos que le guste nuestra página web.
+                </p>
+    
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Esta historia empezó cuando nos vimos cogidos de las güevas en investigación y sentimos la necesidad de ponernos las pilas en emprendimiento, por lo tanto a día de hoy estamos recuperando todas las materias y esperamos que esta página sea de mucha ayuda.
+                </p>
+                <h2>Nuestro Logo</h2>
+                <p>
+                    Hicimos este logotipo con una ensaladita que refleja elsentido del emprendimiento, la comida saludable. A la vez, está saludando y sonriendo, lo cual puede resultarmás atractivo para los niños,que esla población a la que se quiere vender. Esto puede ayudar a atraermás al público
+                </p>
+                
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

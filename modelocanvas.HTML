@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modelo Canvas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --verde-hoja: #8aae7c;
+            --verde-oliva: #b9cc8a;
+            --blanco-puro: #ffffff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: var(--verde-oliva);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .logo-nav {
+            width: 150px;
+            height: auto;
+        }
+        .main-title {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--verde-hoja);
+        }
+        #contact {
+            background-color: var(--verde-oliva);
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--blanco-puro);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: var(--verde-oliva);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="mainmenubtn">Menú</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Inicio</a>
+                    <a href="somos.html">Quiénes Somos</a>
+                    <a href="modelocanvas.html">Modelo Canvas</a>
+                    <a href="productos.html">Productos</a>
+                </div>
+            </div>
+            <img src="logo_color.png" class="logo-nav" alt="Logo de MAHACAM">
+        </nav>
+    </header>
+    <main>
+        <section>
+            <br>
+            <center>
+                <img width="1750" height="850" src="Modelo Canvas .png" alt="Modelo Canvas de MAHACAM">
+            </center>
+        </section>
+    </main>
+
+</body>
+</html>
+
